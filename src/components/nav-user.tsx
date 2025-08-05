@@ -10,6 +10,7 @@ import { api } from "@/trpc/react";
 
 export function NavUser() {
   const { data: userInfo } = api.user.getUserInfo.useQuery();
+  console.log("🚀 ~ NavUser ~ data:", userInfo)
 
   return (
     <SidebarMenu>
