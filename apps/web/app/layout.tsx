@@ -16,7 +16,7 @@ export default function AppRootLayout({
       <ClerkProvider>
         <body className="">
           <AppRootProviders>
-            <main className="flex min-h-screen flex-col">{children}</main>
+            <main className="root">{children}</main>
           </AppRootProviders>
         </body>
       </ClerkProvider>
